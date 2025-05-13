@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despertar da Kundalini - Ativação Energética</title>
+    <meta name="description" content="Ativação segura e guiada da energia Kundalini para expansão da consciência e despertar espiritual.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        #joLeh {
+            display: flex;
+            flex-direction: row;
+        }
+        #joLeh img {
+            width: 50%
+        }
+        @media(max-width: 800px){
+            #joLeh img {
+                margin-left: -5px;
+                width: 50%
+            }
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #ac793a;
+            --secondary: #f59e0b;
+            --light: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('asset/bghome.png');
+            background-size: cover;
+            background-position: center;
+            min-height: 90vh;
+        }
+        
+        .floating-cta {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .feature-icon {
+            background: var(--secondary);
+            width: 60px;
+            height: 60px;
+        }
+        
+        .testimonial-card {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .package-card {
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--secondary);
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .popular {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: var(--secondary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .mobile-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gallery-item {
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        
+        .chakra {
+            animation: pulse 4s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Floating CTA for Mobile -->
+    <div class="mobile-cta md:hidden">
+        <a href="#form" class="bg-[#f59e0b] hover:bg-[#d97706] text-white font-bold py-3 px-6 rounded-full shadow-lg flex items-center">
+            <i class="fas fa-fire mr-2"></i> Quero Ativar
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <span class="title-font text-2xl font-bold text-[#ac793a]">Ativação de Kundalini</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#benefits" class="text-gray-700 hover:text-[#f59e0b] font-medium">Benefícios</a>
+                <a href="#process" class="text-gray-700 hover:text-[#f59e0b] font-medium">Processo</a>
+                <a href="#packages" class="text-gray-700 hover:text-[#f59e0b] font-medium">Sessões</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-[#f59e0b] font-medium">Depoimentos</a>
+                <a href="#form" class="bg-[#ac793a] hover:bg-[#6b21a8] text-white font-bold py-2 px-6 rounded-full">Agendar</a>
+            </div>
+            
+            <button class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center justify-center text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="title-font text-4xl md:text-6xl font-bold mb-4">Desperte Sua Kundalini</h1>
+            <h2 class="title-font text-2xl md:text-4xl font-semibold mb-8">Ativação Segura e Guiada da Energia Primordial</h2>
+            <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto">Transforme sua consciência e alcance novos patamares de existência.</p>
+            <a href="#form" class="floating-cta bg-[#f59e0b] hover:bg-[#d97706] text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg inline-block">Agendar Sessão</a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="title-font text-3xl md:text-4xl font-bold text-center text-[#ac793a] mb-12">Benefícios da Ativação Kundalini</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="flex flex-col items-center text-center p-6">
+                    <div class="feature-icon rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-[#ac793a]">Expansão da Consciência</h3>
+                    <p class="text-gray-600">Acesso a estados elevados de percepção e compreensão da realidade.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="flex flex-col items-center text-center p-6">
+                    <div class="feature-icon rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-[#ac793a]">Cura Emocional</h3>
+                    <p class="text-gray-600">Liberação de traumas e padrões emocionais limitantes.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="flex flex-col items-center text-center p-6">
+                    <div class="feature-icon rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-[#ac793a]">Vitalidade Física</h3>
+                    <p class="text-gray-600">Aumento da energia vital e fortalecimento do sistema imunológico.</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="flex flex-col items-center text-center p-6">
+                    <div class="feature-icon rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-eye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-[#ac793a]">Intuição Aguçada</h3>
+                    <p class="text-gray-600">Desenvolvimento da percepção extra-sensorial e conexão com a sabedoria interior.</p>
+                </div>
+                
+                <!-- Benefit 5 -->
+                <div class="flex flex-col items-center text-center p-6">
+                    <div class="feature-icon rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-spa text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-[#ac793a]">Equilíbrio Energético</h3>
+                    <p class="text-gray-600">Harmonização dos chakras e fluxo equilibrado de energia vital.</p>
+                </div>
+                
+                <!-- Benefit 6 -->
+                <div class="flex flex-col items-center text-center p-6">
+                    <div class="feature-icon rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-infinity text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-[#ac793a]">Conexão Espiritual</h3>
+                    <p class="text-gray-600">Experiência direta da unidade com o divino e com toda a criação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="title-font text-3xl md:text-4xl font-bold text-center text-[#ac793a] mb-12">Como Funciona o Processo</h2>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-[#ac793a]">Ativação Segura e Progressiva</h3>
+                        <p class="text-gray-600 mb-4">Nossa abordagem respeita o ritmo único de cada indivíduo, garantindo uma experiência transformadora sem riscos.</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-[#f59e0b] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span>1</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[#ac793a]">Avaliação Inicial</h4>
+                                    <p class="text-gray-600">Análise do seu estado energético atual e preparação do terreno.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-[#f59e0b] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span>2</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[#ac793a]">Ativação dos Chakras</h4>
+                                    <p class="text-gray-600">Desbloqueio e harmonização dos centros energéticos.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-[#f59e0b] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span>3</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[#ac793a]">Despertar da Kundalini</h4>
+                                    <p class="text-gray-600">Liberação controlada da energia primordial da base da coluna.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-[#f59e0b] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span>4</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[#ac793a]">Integração</h4>
+                                    <p class="text-gray-600">Acompanhamento pós-ativação para assimilação das mudanças.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex justify-center mb-4">
+                            <img src="asset/chakras.png" alt="Chakras" class="rounded-lg w-full max-w-md">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-[#ac793a] text-center">O Sistema de Chakras</h3>
+                        <p class="text-gray-600 text-center">A Kundalini ascende através dos sete principais centros de energia, trazendo iluminação e transformação em cada nível.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="title-font text-3xl md:text-4xl font-bold text-center text-[#ac793a] mb-12">Nossas Sessões de Ativação</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Package 1 -->
+                <div class="package-card bg-white rounded-lg shadow-md p-6 relative">
+                    <h3 class="text-xl font-bold mb-4 text-[#ac793a]">Iniciação</h3>
+                    <p class="text-3xl font-bold mb-4 text-[#f59e0b]">R$ 350<span class="text-sm text-gray-500">/sessão</span></p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Avaliação energética</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Ativação básica</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>1 hora de duração</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Orientações iniciais</span>
+                        </li>
+                    </ul>
+                    <a href="#form" class="block w-full bg-gray-100 hover:bg-[#f59e0b] hover:text-white text-center py-2 rounded font-medium transition-colors">Agendar</a>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="package-card bg-white rounded-lg shadow-md p-6 relative">
+                    <div class="popular">MAIS PEDIDO</div>
+                    <h3 class="text-xl font-bold mb-4 text-[#ac793a]">Transformação</h3>
+                    <p class="text-3xl font-bold mb-4 text-[#f59e0b]">R$ 800<span class="text-sm text-gray-500">/3 sessões</span></p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Ativação completa</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>3 sessões de 1h30</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Práticas de integração</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Material de apoio</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Acompanhamento por 1 mês</span>
+                        </li>
+                    </ul>
+                    <a href="#form" class="block w-full bg-[#ac793a] hover:bg-[#6b21a8] text-white text-center py-2 rounded font-medium transition-colors">Agendar</a>
+                </div>
+                
+                <!-- Package 3 -->
+                <div class="package-card bg-white rounded-lg shadow-md p-6 relative">
+                    <h3 class="text-xl font-bold mb-4 text-[#ac793a]">Iluminação</h3>
+                    <p class="text-3xl font-bold mb-4 text-[#f59e0b]">R$ 1.500<span class="text-sm text-gray-500">/6 sessões</span></p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Processo completo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>6 sessões de 2h</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Práticas avançadas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Acompanhamento por 3 meses</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Retiro de 1 dia incluído</span>
+                        </li>
+                    </ul>
+                    <a href="#form" class="block w-full bg-gray-100 hover:bg-[#f59e0b] hover:text-white text-center py-2 rounded font-medium transition-colors">Agendar</a>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-4">Também oferecemos serviços complementares para seu desenvolvimento:</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="bg-gray-100 px-4 py-2 rounded-full flex items-center">
+                        <i class="fas fa-mountain text-[#f59e0b] mr-2"></i> Retiros Espirituais
+                    </span>
+                    <span class="bg-gray-100 px-4 py-2 rounded-full flex items-center">
+                        <i class="fas fa-yin-yang text-[#f59e0b] mr-2"></i> Meditação Guiada
+                    </span>
+                    <span class="bg-gray-100 px-4 py-2 rounded-full flex items-center">
+                        <i class="fas fa-hands text-[#f59e0b] mr-2"></i> Cura Energética
+                    </span>
+                    <span class="bg-gray-100 px-4 py-2 rounded-full flex items-center">
+                        <i class="fas fa-seedling text-[#f59e0b] mr-2"></i> Mentoria Espiritual
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="title-font text-3xl md:text-4xl font-bold text-center text-[#ac793a] mb-12">Depoimentos de Transformação</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="asset/nik.jpg" alt="Ana L." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Monique Caciano</h4>
+                            <div class="flex text-[#f59e0b]">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"A ativação da minha Kundalini foi a experiência mais transformadora da minha vida. Sinto uma conexão profunda com meu propósito e uma clareza mental que nunca imaginei possível."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="asset/Captura de tela 2025-05-13 124823.png" alt="Carlos R." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Jonas Morais</h4>
+                            <div class="flex text-[#f59e0b]">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Depois de anos buscando respostas, finalmente encontrei um caminho seguro para o despertar espiritual. A energia que flui em mim agora é indescritível e transformou todos os aspectos da minha vida."</p>
+                </div>
+                
+                <!-- Testimonial 3  src="https://randomuser.me/api/portraits/women/75.jpg"-->
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="asset/DSC00557.jpg" alt="Mariana S." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Bianca Micheletti</h4>
+                            <div class="flex text-[#f59e0b]">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"O processo foi conduzido com tanta sabedoria e cuidado que me senti segura em cada etapa. Minha criatividade, intuição e paz interior atingiram níveis que eu nem sabia serem possíveis."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="title-font text-3xl md:text-4xl font-bold text-[#ac793a] mb-6">Sobre as Facilitadoras</h2>
+                    <p class="text-gray-600 mb-6">Conheça as profissionais responsáveis por guiar essa jornada de ativação energética profunda:</p>
+
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold text-[#ac793a]">Joana</h3>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>10 anos de experiência</li>
+                            <li>Mais de R$100 mil faturado</li>
+                            <li>Mais de 1.000 pessoas atendidas</li>
+                            <li>Certificações em: Kundalini, Constelação Familiar, PNL, Psicologia Positiva, CNV, Coaching Sistêmico</li>
+                            <li>Autora do livro "Leoas"</li>
+                            <li>Experiência internacional na Espanha</li>
+                            <li>Projeto autoral na Universidade de Barcelona</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-[#ac793a]">Leticia</h3>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>6 anos de experiência</li>
+                            <li>Mais de R$50 mil faturado</li>
+                            <li>Mais de 300 pessoas atendidas</li>
+                            <li>Certificações em: Kundalini, Coaching Sistêmico, Baralho Cigano, Tarot de Marselha</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="joLeh" class="md:w-1/2 grid grid-cols-1 gap-4">
+                    <img src="asset/Joana.png" alt="Joana Facilitadora" class="rounded-lg shadow-md">
+                    <img src="asset/Leticia.png" alt="Leticia Facilitadora" class="rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form" class="py-16 bg-[#ac793a] text-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="title-font text-3xl md:text-4xl font-bold text-center mb-4">Agende Sua Sessão de Ativação</h2>
+            <p class="text-center text-lg mb-8">Preencha o formulário abaixo e daremos início à sua jornada de transformação.</p>
+            
+            <form class="bg-white rounded-lg shadow-xl p-6 md:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Nome completo</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#f59e0b] text-gray-800" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium mb-2">E-mail</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#f59e0b] text-gray-800" required>
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block text-gray-700 font-medium mb-2">Celular</label>
+                        <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#f59e0b] text-gray-800" required>
+                    </div>
+                    
+                    <div>
+                        <label for="date" class="block text-gray-700 font-medium mb-2">Data preferencial</label>
+                        <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#f59e0b] text-gray-800" required>
+                    </div>
+                    
+                    <div class="md:col-span-2">
+                        <label for="package" class="block text-gray-700 font-medium mb-2">Pacote de interesse</label>
+                        <select id="package" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#f59e0b] text-gray-800">
+                            <option value="">Selecione um pacote</option>
+                            <option value="iniciacao">Iniciação - R$ 350 (1 sessão)</option>
+                            <option value="transformacao">Transformação - R$ 800 (3 sessões)</option>
+                            <option value="iluminacao">Iluminação - R$ 1.500 (6 sessões)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="md:col-span-2">
+                        <label for="experience" class="block text-gray-700 font-medium mb-2">Sua experiência com práticas energéticas</label>
+                        <textarea id="experience" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#f59e0b] text-gray-800"></textarea>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <button type="submit" class="bg-[#f59e0b] hover:bg-[#d97706] text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition-colors">
+                        Agendar Sessão
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="title-font text-3xl md:text-4xl font-bold text-center text-[#ac793a] mb-12">Perguntas Frequentes</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-[#ac793a] mb-2">A ativação da Kundalini é segura?</h3>
+                    <p class="text-gray-600">Sim, quando conduzida por um profissional experiente e de forma gradual. Nossa abordagem respeita os limites de cada indivíduo, garantindo uma experiência transformadora sem riscos.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-[#ac793a] mb-2">Quanto tempo dura o processo?</h3>
+                    <p class="text-gray-600">O tempo varia conforme o pacote escolhido e a predisposição individual. Algumas pessoas sentem efeitos imediatos, enquanto outras necessitam de mais sessões para uma ativação completa.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-[#ac793a] mb-2">Preciso ter experiência prévia?</h3>
+                    <p class="text-gray-600">Não é necessário. Nossas sessões são adaptáveis a todos os níveis, desde iniciantes até praticantes avançados.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-[#ac793a] mb-2">Quais os efeitos colaterais?</h3>
+                    <p class="text-gray-600">Quando bem conduzida, a ativação pode causar sensações passageiras de calor, formigamento ou emoções intensas, que são parte natural do processo de transformação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="title-font text-xl font-bold mb-4">Ativação de Kundalini</h3>
+                    <p class="text-gray-400">Ativação segura e guiada da energia primordial para expansão da consciência.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-[#f59e0b]"></i>
+                            <span>(11) 98765-4321</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-[#f59e0b]"></i>
+                            <span>contato@kundaliniawakening.com.br</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-[#f59e0b]"></i>
+                            <p><a href="https://waze.com/ul/h6gydmssps" target="_blank">Como chegar com Waze</a></p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Horário</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="far fa-clock mt-1 mr-3 text-[#f59e0b]"></i>
+                            <span>Seg-Sex: 9h às 18h</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="far fa-clock mt-1 mr-3 text-[#f59e0b]"></i>
+                            <span>Sáb: 9h às 13h</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-calendar-day mt-1 mr-3 text-[#f59e0b]"></i>
+                            <span>Sessões: 7 dias/semana</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#f59e0b] transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#f59e0b] transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#f59e0b] transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Kundalini Awakening - Ativação Energética. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const date = document.getElementById('date').value;
+        const package = document.getElementById('package').value;
+        const experience = document.getElementById('experience').value;
+
+        const message = `Olá! Gostaria de agendar uma sessão de Ativação Kundalini.%0A
+        *Nome:* ${name}%0A
+        *E-mail:* ${email}
+        *Celular:* ${phone}
+        *Data preferencial:* ${date}
+        *Pacote de interesse:* ${package}
+        *Experiência com práticas energéticas:* ${experience}`;
+
+                const phoneNumber = "5511932223533";
+                const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                window.open(url, "_blank");
+        });
+        
+        // Mobile menu toggle
+        document.querySelector('nav button').addEventListener('click', function() {
+            const menu = document.querySelector('.hidden.md\\:flex');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-16');
+            menu.classList.toggle('right-4');
+            menu.classList.toggle('bg-white');
+            menu.classList.toggle('p-4');
+            menu.classList.toggle('rounded-lg');
+            menu.classList.toggle('shadow-xl');
+        });
+    </script>
+</body>
+</html>
